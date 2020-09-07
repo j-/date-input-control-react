@@ -4,6 +4,7 @@
   "description": "Capture dates using day, month and year components in React",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/j-/date-input-control-react/issues"
   },
-  "homepage": "https://github.com/j-/date-input-control-react#readme"
+  "homepage": "https://github.com/j-/date-input-control-react#readme",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
 }
