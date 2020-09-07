@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "clean": "rimraf \"**.{js,d.ts}\"",
+    "prepare": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@types/react": "^16.9.49",
     "react": "^16.8.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.0.2"
   },
   "dependencies": {
