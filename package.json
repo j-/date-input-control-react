@@ -27,6 +27,14 @@
   },
   "homepage": "https://github.com/j-/date-input-control-react#readme",
   "devDependencies": {
+    "@types/react": "^16.9.49",
+    "react": "^16.8.0",
     "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "date-input-control": "0.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   }
 }
