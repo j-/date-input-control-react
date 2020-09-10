@@ -1,9 +1,9 @@
 import { useRef, useEffect } from 'react';
-import { createDateInputControl } from 'date-input-control';
+import { createDateInputControl, Options } from 'date-input-control';
 
 const isNonNull = <T>(x: T): x is NonNullable<T> => x != null;
 
-export const useDateInputControl = () => {
+export const useDateInputControl = (options?: Options) => {
   const ref0 = useRef<HTMLInputElement>(null);
   const ref1 = useRef<HTMLInputElement>(null);
   const ref2 = useRef<HTMLInputElement>(null);
@@ -27,8 +27,8 @@ export const useDateInputControl = () => {
     const el8 = ref8.current;
     const el9 = ref9.current;
     const inputs = [el0, el1, el2, el3, el4, el5, el6, el7, el8, el9].filter(isNonNull);
-    return createDateInputControl(inputs);
-  }, []);
+    return createDateInputControl(inputs, options);
+  }, [options]);
 
   return [ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9];
 };
